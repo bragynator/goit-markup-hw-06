@@ -353,8 +353,8 @@
                     </ul>
                 </address>
             </div>
-            <div class="footer-right">
-                <p class="footer-right-text">Присоединяйтесь</p>
+            <div class="footer-center">
+                <p class="footer-center-text">Присоединяйтесь</p>
                 <ul class="footer-social-list">
                     <li class="footer-social-item">
                         <a href="" class="footer-social-link">
@@ -386,6 +386,17 @@
                     </li>
                 </ul>
             </div>
+            <div class="footer-right">
+                <p class="footer-right-text">Подпишитесь на рассылку</p>
+                <form action="#" class="subscribe-form">
+                    <input type="email" class="subscribe-email" name="subscribe-email" placeholder="E-mail"/>
+                    <button type="submit" class="subscribe-button">Подписаться 
+                            <svg class="subscribe-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-subscribe"></use>
+                            </svg>
+                    </button>
+                </form>
+            </div>
         </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -395,6 +406,51 @@
                     <use href="./images/icons.svg#icon-modal-close"></use>
                 </svg>
             </button>
+            <form action="#" class="application-form">
+                <p class="application-title">Оставьте свои данные, мы вам перезвоним</p>
+                <label class="application-label">
+                    Имя
+                    <span class="input-wrap">
+                        <input type="text" name="application-name" class="application-input" />
+                        <svg class="application-icon" width="18" height="18">
+                            <use href="./images/icons.svg#icon-form-name"></use>
+                        </svg>
+                    </span>
+                </label>
+                <label class="application-label">
+                    Телефон
+                    <span class="input-wrap">
+                        <input type="tel" name="application-tel" class="application-input" />
+                        <svg class="application-icon" width="18" height="18">
+                            <use href="./images/icons.svg#icon-form-tel"></use>
+                        </svg>
+                    </span>
+                </label>
+                <label class="application-label">
+                    Почта
+                    <span class="input-wrap">
+                        <input type="email" name="application-email" class="application-input" />
+                        <svg class="application-icon" width="18" height="18">
+                            <use href="./images/icons.svg#icon-form-email"></use>
+                        </svg>
+                    </span>
+                </label>
+                <label class="application-label">
+                    Комментарий
+                    <textarea name="application-comment" class="application-text" placeholder="Введите текст"></textarea>
+                </label>
+                <label class="application-policy">
+                    <input type="checkbox" class="policy-checkbox" name="policy" value="accept" />
+                    <span class="policy-item">
+                        <svg class="policy-icon" width="16" height="15">
+                            <use href="./images/icons.svg#icon-check"></use>
+                        </svg>
+                    </span>
+                    Соглашаюсь с рассылкой и принимаю 
+                    <a href="" class="policy-link">Условия договора</a>
+                </label>
+                <button type="submit" class ="application-button">Отправить</button>
+            </form>
         </div>
     </div>
 </body>
